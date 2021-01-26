@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.heart p {
+    text-align: center;
+    font-size: 110px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    animation: phapphong 2s infinite;
+}
+
+@keyframes phapphong {
+    10% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.1);
+    }
+    30% {
+        transform: scale(1.3);
+    }
+    40% {
+        transform: scale(1.1);
+    }
+    60% {
+        transform: scale(1.3);
+    }
+    90% {
+        transform: scale(1.5);
+    }
+}
+
+#TEXT {
+    background-color: aliceblue;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#TEXT p {
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 30px;
+    color: #4d5054;
+    line-height: 2;
+}
+
+.nhapnhay::after {
+    content: "";
+    animation: biendoi 6s ease 0.5s infinite;
+}
+
+@keyframes biendoi {
+    0% {
+        content: "CODING";
+        font-size: 30px;
+        background-color: #c2621c;
+        color: aliceblue;
+    }
+    30% {
+        content: "TEACHING";
+        font-size: 30px;
+        background-color: #5a3294;
+        color: aliceblue;
+    }
+    70% {
+        content: "LEARNING";
+        font-size: 30px;
+        color: aliceblue;
+        background-color: #228a4c;
+    }
+    99% {
+        content: "CODING";
+        font-size: 30px;
+        color: aliceblue;
+        background-color: #c2621c;
+    }
+}
